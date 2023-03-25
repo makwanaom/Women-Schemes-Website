@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0%;
+      background-color: rgb(255, 255, 255);
+      max-width: 100vw !important;
+      /* background-image: url(https://th.bing.com/th/id/OIP.CSThJ0qpV3XKsURD0iKZ0AHaEK?pid=ImgDet&rs=1);
+      background-attachment: fixed;
+      background-repeat:no-repeat ;
+      background-size: 100%; */
+    }
+
+    header {
+      padding-left: 17px;
+      position: static;
+
+    }
+
+    .right img {
+
+      padding: 0px;
+      float: right;
+      overflow: auto;
+
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      background-attachment: fixed;
+
+
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content-1{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 290px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-1 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover  .dropdown-content-1{
+      display: block;
+    }
+    .dropdown-content-11{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-11 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-1:hover .dropdown-content-11{
+      display: block;
+    }
+    .dropdown-content-2{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 290px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-2 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover .dropdown-content-2{
+      display: block;
+    }
+    .dropdown-content-21{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-21 a{
+      float: none;
+      
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-2:hover .dropdown-content-21{
+      display: block;
+    }
+    .dropdown-content-3{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 290px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-3 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover .dropdown-content-3{
+      display: block;
+    }
+    .dropdown-content-31{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-31 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-3:hover .dropdown-content-31{
+      display: block;
+    }
+    .bullet {
+      list-style-type: square;
+    }
+
+
+    .home {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-decoration: solid;
+      font-size: large;
+      line-height: 1.8em;
+
+    }
+
+    .Search {
+      text-align: center;
+      float: right;
+      color: blue;
+      padding: 12px 13px;
+    }
+
+    .navBar input {
+      border: 2px solid black;
+      border-radius: 14px;
+      padding: 4px 17px;
+      width: 20px;
+
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 60px;
+      display: block;
+    }
+
+    
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      background: white;
+      max-width: 80vw;
+      border: solid 5px black;
+      margin-top: 60px;
+      margin-left: 19vw;
+      margin-right: 19vw;
+      float: none;
+    }
+    .gujarati{
+         float: right;
+    }
+   .size{
+    transition: all ease-in 3s;
+   }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      transition: ease-in 2s;
+      animation-duration: 0.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+    .footer-dark {
+  padding:50px 0 0 50px;;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:2.5;
+ 
+  font-size:14px;
+  margin-bottom:0;
+}
+
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+@media  (min-width: 767px) {
+  .visit-counter{
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 50;
+  overflow: hidden;
+}
+}
+@media (max-width: 400px){
+.visit-counter{
+margin: 10px 30px 10px 00px;
+font-size: 70%;
+}
+}
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:right;
+  margin: -50px 50px 30px;
+
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:10px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  background-color: rgb(231, 16, 16);
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: red; /* Add a dark-grey background on hover */
+}
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="right">
+      <img class="img" src="./logo.png" alt="This is LOGO" width="60vw" height="50vh">
+
+      <h1> Women Welfare Schemes</h1>
+    </div>.
+
+  </header>
+  <!-- code for navigation bar -->
+  <div id="navbar" class="navbar">
+    <a class="active" href="./index.html">Home</a>
+    <!-- <a href="#about">About Us</a> -->
+    <div class="dropdown">
+      <button class="dropbtn">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./introduction.html">Introduction</a>
+        <a href="./vision.html">Vision </a>
+        <a href="./objectives.html">Objectives</a>
+        <a href="./who_we_are_.html">Who we are</a>
+        <a href="./what_we_do.html">What we do</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Schemes
+        <i class="fa fa-caret-down"></i>
+      </button>
+      
+      <div class="dropdown-content">
+        <a target="_self" href="./wEMPOWERMENTSCHEME.html">Women Empowerment Schemes </a>
+        <div class="dropdown">
+         
+          <div class="dropdown-content-1">
+            <a href="./wEMPOWERMENTSCHEME.html">Kishori sakti Yojna</a>
+            <div class="dropdown">
+         
+              <div class="dropdown-content-11">
+                <a href="./wEMPOWERMENTSCHEME.html">Related to Self Developement <hr> Age : 12-18 <hr>Annual Income : Less than 2 Lakhs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./wEducationScheme.html">Women Education Schemes </a>
+        <div class="dropdown">
+         
+          <div class="dropdown-content-2">
+            <a href="./wEducationScheme.html">Vahali Dikari Yojna</a>
+            <div class="dropdown">
+         
+              <div class="dropdown-content-21">
+                <a href="./wEMPOWERMENTSCHEME.html">Must belong to EWS, BPL<hr> To eliminate child mortality and child marriage <hr>Rs 1,10,000 subsidy on birth of first girl child</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="./meternity schemes .html">Women maternity Schemes</a>
+         <div class="dropdown">
+         
+          <div class="dropdown-content-3">
+            <a href="./wEducationScheme.html">Beti Bachao Beti Padhao</a>
+            <div class="dropdown">
+         
+              <div class="dropdown-content-31">
+                <a href="./wEMPOWERMENTSCHEME.html">Promotes girl child education<hr>Age criteria < 10yrs<hr> be Sukanya Samriddhi Account holder</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./employement schemes.html">Women Employment Schemes</a>
+        <div class="dropdown">
+         
+          <div class="dropdown-content-3">
+            <a href="./meternity schemes .html">Mukhyamantri Amrutum Yojna</a>
+            <div class="dropdown">
+         
+              <div class="dropdown-content-31">
+                <a href="./wEMPOWERMENTSCHEME.html">Medical expenses covered upto Rs5lakhs/year<hr>All basic medications covered<hr>Annual income : less than Rs 6lakhs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./other schemes.html">Other Schemes</a>
+        <div class="dropdown">
+         
+          <div class="dropdown-content-3">
+            <a href="./employement schemes.html">Mukhyamantri Mahila Utkarsh Yojna</a>
+            <div class="dropdown">
+         
+              <div class="dropdown-content-31">
+                <a href="./wEMPOWERMENTSCHEME.html">Interest free loans<hr> Self-helf groups must include ten members ea<hr>To ensure employment to women</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <a href="./ContactUs.html">Contact Us</a>
+    <a href="./helplinecentre.html">Helpline Centre's</a>
+    <a href="./feedback.html">Feedback</a>
+    <!-- code for search bar -->
+    <div class="Search">
+      <form class="d-flex" role="search" action="https://www.google.com/search" method="search">
+        <input class="form-control-me-2" type="text" placeholder="Search Here" aria-label="Search" name="q" value=""
+          id="my input" onkeyup="Searchbar()">
+        <button class="btn-btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+  </div>
+   <section id="google_element" class="gujarati"></section>
+
+
+  <br >
+  <!-- code for slideshow -->
+  <section>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./health and welfare schemes.jpg" style="width: 60vw; ">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./2.png" style="width:60vw">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="./women activities.jpg" style="width:60vw">
+        <div class="text"></div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </section>
+  <!-- code for homepage content -->
+  <div class="home">
+    <ul class="bullet">
+
+
+      <h2 >
+        <li>Woman Welfare Schemes</li>
+      </h2>
+      <br>
+      <div class="size" >
+        <p > The Social Welfare Department has stepped forward to take initiatives for the welfare of
+          woman.
+
+          The following schemes have been initiated to work towards the betterment of women in the state :</p>
+        <p >
+          The constitution of India resolves to constitute India into a Sovereign Socialist Secular Democratic Republic
+          and secure to all citizens its Fundamental Rights. The Principle of Gender equality grants equality to women
+          and empowers the State to adopt measures of positive discrimination in favor of women.</p>
+        <p>The Department is sensitive in eliminating gender based discrimination from society through gender
+          sensitization and gender just development in Gujarat. It mainstreams women in programs, plans, development and
+          implementations by bridging the gap of gender bias. It has fringed policies that ensure gender equality. For
+          the family welfare, the department functions for activities in coordination with other Departments and
+          organizations in connection with this subject. It plays a significant role for Socio-economic-educational
+          welfare of Women and children and imparts empowerment guidelines and awareness.</p>
+      </div>
+      <br>
+      <h2>
+        <li>Nari Gaurav Din:</li>
+      </h2>
+      <div class="size">
+        <p>
+          Every year, the day of <b>8th March</b> is celebrated as "Nari Gaurav Din" A formal function is organized at
+          State level and information, education and communication (I.E.C.) activities are carried out to various
+          Government Program and Schemes.</p>
+      </div>
+      <br>
+      <h2>
+        <li>Woman Helpline:</li>
+      </h2>
+      <div class="size">
+        <p>
+          The Scheme of Universalisation of Women Helpline is intended to provide 24 hours immediate and emergency
+          response to women affected by violence through referral (linking with appropriate authority such as police,
+          One Stop Centre, hospital) and information about women related government schemes programs across the country
+          through a single uniform number.</p>
+      </div>
+      <br>
+      <h2>
+        <li>Helpline Number:</li>
+      </h2>
+      <div class="size">
+        <p>
+          The Women Helpline is intended to provide <b>24 hours</b> immediate and emergency repsponse to women affected
+          by violence through referral and information about women related government schemes.
+          The Women Helpline Number is <b>181.</b></p>
+    </ul>
+  </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Women and child Department</h3>
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>   Block NO 9, 6th Floor,New sachivalay, Gandhinagar</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> 079-232-57942</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> pa2sec-wncw@gujarat.gov.in</li>
+                    </ul>
+                </div>
+    
+                <div class="visit-counter">
+                  <p>This page was viewed</p>
+                  <h1 id="count">0</h1>
+                  <p>times</p>
+                </div>
+                <div class="col item social"> FOLLOW US ON : <br><br><a target="_blank" href="https://www.facebook.com/WCDGujarat/"><i class="icon ion-social-facebook"></i></a><a target="_blank" href="https://twitter.com/WCDGujarat"><i class="icon ion-social-twitter"></i></a><a target="_blank" href="https://www.linkedin.com/company/women-child-development-department-govt-of-gujarat/?originalSubdomain=in"><i class="icon ion-social-linkedin"></i></a><a target="_blank" href="https://www.instagram.com/wcdgujarat/?hl=en"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Copyright @ Government of Gujarat</p>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+const countEl = document.getElementById("count");
+      countvisits();
+
+      function countvisits() {
+        fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1')
+          .then((res) => res.json())
+          .then((res) => {
+            countEl.innerHTML = res.value;
+          });
+      }
+  </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script>
+    function loadGoogleTranslate() {
+      new google.translate.TranslateElement(
+        "google_element");
+    }
+
+
+  </script>
+
+</body>
+
+</html>

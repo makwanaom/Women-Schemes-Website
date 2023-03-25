@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<style>
+   
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
+header{
+    padding-left: 17px;
+    position: static;
+}
+.right img{
+ 
+    padding:  0px;
+    float :right ;
+    overflow: auto;
+ 
+}
+.navbar {
+      overflow: hidden;
+      background-color: #333;
+      background-attachment: fixed;
+
+
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content-1{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 264px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-1 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover  .dropdown-content-1{
+      display: block;
+    }
+    .dropdown-content-11{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-11 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-1:hover .dropdown-content-11{
+      display: block;
+    }
+    .dropdown-content-2{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 264px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-2 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover .dropdown-content-2{
+      display: block;
+    }
+    .dropdown-content-21{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-21 a{
+      float: none;
+      
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-2:hover .dropdown-content-21{
+      display: block;
+    }
+    .dropdown-content-3{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 264px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-3 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover .dropdown-content-3{
+      display: block;
+    }
+    .dropdown-content-31{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-31 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-3:hover .dropdown-content-31{
+      display: block;
+    }
+
+.home{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: solid;
+  line-height: 1.8em;
+  font-size: 23px;
+
+  padding: 3px 40px;
+}
+.Search{
+            text-align: center;
+            float: right;
+            color: blue;
+            padding: 12px 13px;
+           }
+           .navBar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 4px 17px;
+            width: 20px;
+           }
+           .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.gujarati{
+         float: right;
+    }
+
+.sticky + .content {
+  padding-top: 60px;
+}.active{
+      background-color: rgb(129, 123, 123) ;
+    }
+    .footer-dark {
+  padding:50px 0 0 50px;;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:2.5;
+ 
+  font-size:14px;
+  margin-bottom:0;
+}
+
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:right;
+  margin: -50px 50px 30px;
+
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:10px;
+  }
+}
+@media  (min-width: 767px) {
+  .visit-counter{
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 50;
+  overflow: hidden;
+}
+}
+@media (max-width: 400px){
+.visit-counter{
+margin: 10px 30px 10px 00px;
+font-size: 70%;
+}
+}
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  background-color: rgb(231, 16, 16);
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+    
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: red; /* Add a dark-grey background on hover */
+}
+</style>
+</head>
+<body>
+    <header> 
+        <div class="right">
+        <img class="img" src="/logo.png" alt="This is LOGO" width="80vw" height="57vh" >
+        </div>
+        <h1  > Women Welfare Schemes</h1>
+   
+        
+    </header>
+
+<div id="navbar" class="navbar">
+  <a href="/index.html">Home</a>
+  <!-- <a href="#about">About Us</a> -->
+  <div class="dropdown">
+    <button class="dropbtn">About Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a  href="/introduction.html">Introduction</a>
+      <a class="active"  href="/vision.html">Vision </a>
+      <a href="/objectives.html">Objectives</a>
+      <a href="/who_we_are_.html">Who we are</a>
+      <a href="/what_we_do.html">What we do</a>
+    </div>
+    </div>
+  <div class="dropdown">
+    <button class="dropbtn">Schemes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a target="_self" href="/wEMPOWERMENTSCHEME.html">Women Empowerment Schemes </a>
+      <div class="dropdown">
+       
+        <div class="dropdown-content-1">
+          <a href="./wEMPOWERMENTSCHEME.html">Kishori sakti Yojna</a>
+          <div class="dropdown">
+       
+            <div class="dropdown-content-11">
+              <a href="./wEMPOWERMENTSCHEME.html">Related to Self Developement <hr> Age : 12-18 <hr>Annual Income : Less than 2 Lakhs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/wEducationScheme.html">Women Education Schemes </a>
+      <div class="dropdown">
+       
+        <div class="dropdown-content-2">
+          <a href="./wEMPOWERMENTSCHEME.html">Vahali Dikari Yojna</a>
+          <div class="dropdown">
+       
+            <div class="dropdown-content-21">
+              <a href="./wEMPOWERMENTSCHEME.html">Must belong to EWS, BPL<hr> To eliminate child mortality and child marriage <hr>Rs 1,10,000 subsidy on birth of first girl child</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/meternity schemes .html">Women maternity Schemes</a>
+       <div class="dropdown">
+       
+        <div class="dropdown-content-3">
+          <a href="./wEMPOWERMENTSCHEME.html">Beti Bachao Beti Padhao</a>
+          <div class="dropdown">
+       
+            <div class="dropdown-content-31">
+              <a href="./wEMPOWERMENTSCHEME.html">Promotes girl child education<hr>Age criteria < 10yrs<hr> be Sukanya Samriddhi Account holder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/employement schemes.html">Women Employment Schemes</a>
+      <div class="dropdown">
+       
+        <div class="dropdown-content-3">
+          <a href="./wEMPOWERMENTSCHEME.html">Mukhyamantri Amrutum Yojna</a>
+          <div class="dropdown">
+       
+            <div class="dropdown-content-31">
+              <a href="./wEMPOWERMENTSCHEME.html">Medical expenses covered upto Rs5lakhs/year<hr>All basic medications covered<hr>Annual income : less than Rs 6lakhs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/other schemes.html">Other Schemes</a>
+      <div class="dropdown">
+       
+        <div class="dropdown-content-3">
+          <a href="./wEMPOWERMENTSCHEME.html">Mukhyamantri Mahila Utkarsh Yojna</a>
+          <div class="dropdown">
+       
+            <div class="dropdown-content-31">
+              <a href="./wEMPOWERMENTSCHEME.html">Interest free loans<hr> Self-helf groups must include ten members ea<hr>To ensure employment to women</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <a href="/ContactUs.html">Contact Us</a>
+  <a href="/helplinecentre.html">Helpline Centre's (Map)</a>
+  <a href="./feedback.html">Feedback</a>
+  <div class="Search">
+    <form class="d-flex" role="search" action="https://www.google.com/search" method="search">
+      <input class="form-control-me-2" type="text" placeholder="Search Here" aria-label="Search" name="q" value="" id="my input"
+        onkeyup="Searchbar()">
+      <button class="btn-btn-outline-success" type="submit">Search</button>
+    </form>
+
+</div>
+</div>
+<section id="google_element" class="gujarati"></section>
+<div class="home">
+  <ul>
+    <h2><li>Vision:</li></h2>
+    Our vision is to facilitate women to become economically and socially empowered , so that they contribute healthy and equal partners in an environment free from violence and discrimination. Provision of opportunities to children and adolescent girls for growth and development to the fullest in safe and protected environment.<br><br>
+     Women have been part of social torture since ancient times and are always ranked and preferred last in terms of work load and capabilities which makes them feel deprived and depressed. 
+Our motto is to make them feel equal and make them feel they are no less than the other sections of the society and provide them the right information related to their benefits . 
+We as a team focus on authentic information and no bluffing so that women really in need can fully utilize our website.
+<br>
+In future we expect to widen and add more information to our website.
+Our website would observe more updates in future too.
+  </ul>
+</div>
+<br><br>
+<br>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Women and child Department</h3>
+                  <ul>
+                      <li><i class="fa fa-map-marker" aria-hidden="true"></i>   Block NO 9, 6th Floor,New sachivalay, Gandhinagar</li>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i> 079-232-57942</li>
+                      <li><i class="fa fa-envelope" aria-hidden="true"></i> pa2sec-wncw@gujarat.gov.in</li>
+                  </ul>
+              </div>
+  
+              <div class="visit-counter">
+                <p>This page was viewed</p>
+                <h1 id="count">0</h1>
+                <p>times</p>
+              </div>
+              <div class="col item social"><a target="_blank" href="https://www.facebook.com/WCDGujarat/"><i class="icon ion-social-facebook"></i></a><a target="_blank" href="https://twitter.com/WCDGujarat"><i class="icon ion-social-twitter"></i></a><a target="_blank" href="https://www.linkedin.com/company/women-child-development-department-govt-of-gujarat/?originalSubdomain=in"><i class="icon ion-social-linkedin"></i></a><a target="_blank" href="https://www.instagram.com/wcdgujarat/?hl=en"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">Copyright @ Government of Gujarat</p>
+      </div>
+  </footer>
+</div>
+
+<script>
+  
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+ // Get the button:
+ let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+const countEl = document.getElementById("count");
+      countvisits();
+
+      function countvisits() {
+        fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1')
+          .then((res) => res.json())
+          .then((res) => {
+            countEl.innerHTML = res.value;
+          });
+      }
+</script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+ <script>
+   function loadGoogleTranslate() {
+     new google.translate.TranslateElement(
+       "google_element");
+   }
+
+
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            
+      
+        }
+.bkc{
+  background-image: url(/mt-bg.jpg);
+      background-attachment: fixed;
+      background-repeat:no-repeat ;
+      background-size: cover;
+}
+        header {
+            padding-left: 17px;
+            position: static;
+        }
+
+        .right img {
+
+            padding: 0px;
+            float: right;
+            overflow: auto;
+
+        }
+        .navbar {
+      overflow: hidden;
+      background-color: #333;
+      background-attachment: fixed;
+
+
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content-1{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 264px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-1 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover  .dropdown-content-1{
+      display: block;
+    }
+    .dropdown-content-11{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-11 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-1:hover .dropdown-content-11{
+      display: block;
+    }
+    .dropdown-content-2{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 264px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-2 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover .dropdown-content-2{
+      display: block;
+    }
+    .dropdown-content-21{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-21 a{
+      float: none;
+      
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-2:hover .dropdown-content-21{
+      display: block;
+    }
+    .dropdown-content-3{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 264px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-3 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content:hover .dropdown-content-3{
+      display: block;
+    }
+    .dropdown-content-31{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      margin-top: -42px;
+      margin-left: 300px;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content-31 a{
+      float: none;
+      color: black;
+      padding: 12px 16px ;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content-3:hover .dropdown-content-31{
+      display: block;
+    }
+
+        .home {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: solid;
+            font-size: large;
+            line-height: 1.8em;
+            font-size: 23px;
+
+padding: 3px 40px;
+        }
+        /* .bold{
+            font-weight: bold;
+        } */
+
+        .Search {
+            float: right;
+            color: blue;
+            padding: 12px 13px;
+        }
+
+        .navBar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 4px 17px;
+            width: 120px;
+        }
+        .bullet {
+      list-style-type: square;
+        }
+        .grid{
+            display: grid;
+            grid-column-gap: 9px;
+            grid-row-gap: 2px;
+            grid-gap: 9px;
+            height: 34vh;
+            grid-template-columns: auto auto ;
+        }
+        .img56{
+            padding: 0px 140px;
+        }
+        .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.gujarati{
+         float: right;
+    }
+
+.sticky + .content {
+  padding-top: 60px;
+}.active{
+      background-color: rgb(129, 123, 123) ;
+    }
+    .footer-dark {
+  padding:50px 0 0 50px;;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:2.5;
+ 
+  font-size:14px;
+  margin-bottom:0;
+}
+
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:right;
+  margin: -50px 50px 30px;
+
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:10px;
+  }
+}
+@media  (min-width: 767px) {
+  .visit-counter{
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 50;
+  overflow: hidden;
+}
+}
+@media (max-width: 400px){
+.visit-counter{
+margin: 10px 30px 10px 00px;
+font-size: 70%;
+}
+}
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  background-color: rgb(231, 16, 16);
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: red; /* Add a dark-grey background on hover */
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="right">
+            <img class="img" src="/logo.png" alt="This is LOGO" width="80vw" height="57vh">
+        </div>
+        <h1>  Women Welfare Schemes</h1>
+
+
+    </header>
+
+    <div id="navbar" class="navbar">
+        <a href="/index.html">Home</a>
+        <!-- <a href="#about">About Us</a> -->
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/introduction.html">Introduction</a>
+                <a href="/vision.html">Vision </a>
+                <a href="/objectives.html">Objectives</a>
+                <a href="/who_we_are_.html">Who we are</a>
+                <a href="/what_we_do.html">What we do</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Schemes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a target="_self" href="/wEMPOWERMENTSCHEME.html">Women Empowerment Schemes </a>
+              <div class="dropdown">
+               
+                <div class="dropdown-content-1">
+                  <a href="./wEMPOWERMENTSCHEME.html">Kishori sakti Yojna</a>
+                  <div class="dropdown">
+               
+                    <div class="dropdown-content-11">
+                      <a href="./wEMPOWERMENTSCHEME.html">Related to Self Developement <hr> Age : 12-18 <hr>Annual Income : Less than 2 Lakhs</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="/wEducationScheme.html">Women Education Schemes </a>
+              <div class="dropdown">
+               
+                <div class="dropdown-content-2">
+                  <a href="./wEMPOWERMENTSCHEME.html">Vahali Dikari Yojna</a>
+                  <div class="dropdown">
+               
+                    <div class="dropdown-content-21">
+                      <a href="./wEMPOWERMENTSCHEME.html">Must belong to EWS, BPL<hr> To eliminate child mortality and child marriage <hr>Rs 1,10,000 subsidy on birth of first girl child</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <a href="/meternity schemes .html">Women maternity Schemes</a>
+               <div class="dropdown">
+               
+                <div class="dropdown-content-3">
+                  <a href="./wEMPOWERMENTSCHEME.html">Beti Bachao Beti Padhao</a>
+                  <div class="dropdown">
+               
+                    <div class="dropdown-content-31">
+                      <a href="./wEMPOWERMENTSCHEME.html">Promotes girl child education<hr>Age criteria < 10yrs<hr> be Sukanya Samriddhi Account holder</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="/employement schemes.html">Women Employment Schemes</a>
+              <div class="dropdown">
+               
+                <div class="dropdown-content-3">
+                  <a href="./wEMPOWERMENTSCHEME.html">Mukhyamantri Amrutum Yojna</a>
+                  <div class="dropdown">
+               
+                    <div class="dropdown-content-31">
+                      <a href="./wEMPOWERMENTSCHEME.html">Medical expenses covered upto Rs5lakhs/year<hr>All basic medications covered<hr>Annual income : less than Rs 6lakhs</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="/other schemes.html">Other Schemes</a>
+              <div class="dropdown">
+               
+                <div class="dropdown-content-3">
+                  <a href="./wEMPOWERMENTSCHEME.html">Mukhyamantri Mahila Utkarsh Yojna</a>
+                  <div class="dropdown">
+               
+                    <div class="dropdown-content-31">
+                      <a href="./wEMPOWERMENTSCHEME.html">Interest free loans<hr> Self-helf groups must include ten members ea<hr>To ensure employment to women</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        <a href="/ContactUs.html">Contact Us</a>
+        <a href="/helplinecentre.html">Helpline Centre's (Map)</a>
+        <a href="./feedback.html">Feedback</a>
+        <div class="Search">
+            <form class="d-flex" role="search" action="https://www.google.com/search" method="search">
+                <input class="form-control-me-2" type="text" placeholder="Search Here" aria-label="Search" name="q" value="" id="my input"
+                  onkeyup="Searchbar()">
+                <button class="btn-btn-outline-success" type="submit">Search</button>
+              </form>
+        
+        </div>
+
+
+    </div>
+    <section id="google_element" class="gujarati"></section>
+
+    <div class="bkc">
+    <div class="home"><p>
+        <ul class="bullet">
+       <h1><li>Mukhyamantri Amrutum Yojana</li></h1>
+       <div class="img56">
+        <img src="./Wmaternity.jpg" alt="Wmate" height="400px" width="900px" style="border: solid 5px; border-radius: 15px;">
+       </div>
+       <p>
+       Increasing medical costs in India are a major concern especially for poor people. Economically challenged people often get trapped in a debt cycle when there is a medical emergency in their families. Mukhyamantri Amrutum Yojana is a health care plan developed by the Government of Gujarat to help poor families in their major adversities. This scheme provides financial support to below poverty line and lower income families living in Gujarat. Though originally intended for below poverty line families, this plan was later modified to include lower middle class families in the state. Mukhyamantri Amrutum Vatsalya Yojana is the modified cover that includes more families in its ambit.Mukhyamantri Amrutum Yojana, launched by the Government of Gujarat on 4th September 2012 caters to people falling under the lowest income groups in Gujarat i.e. Below Poverty Line (BPL). Under the scheme, the beneficiaries can avail of medical treatment for up to Rs. 5 Lakh per family in a year. Other coverage benefits include travel expenses, repatriation of remains, etc.
+    </p>
+       <h2> • Major benefits offered under Mukhyamantri Amrutum Yojana are as follows:
+    </h2>
+    <p class="bold">
+    Cover for medical expenses for Rs. 5 lakh per family for every year
+    <br>
+    → Travel charges for Rs. 300 per hospitalisation
+    <br>
+    → Repatriation of remains for Rs. 6 per kilometer from the hospital to the residence
+    <br>
+    → All benefits of the PMJAY Ayushman Bharat Pradhan Mantri Jan Arogya Yojana
+    <br>
+    → Other expenses that the policy covers include diagnostics, admission charges, surgery, medicines, food of the patient, admission expenses, hospital registration, post-surgery follow up expenses, and travel expenses
+    <br>
+</p>
+<h2>• Tabulated below are the diseases covered under Mukhyamantri Amrutum Yojana:</h2>
+
+
+
+<div class="grid">
+    <div class="grid0">→Burns and plastic surgery</div>
+<div class="grid1">→ Nephrology</div>
+ <div class="grid2">→Cardiothoracic & vascular surgery</div>
+<div class="grid3">→Neurosurgery neurology</div>
+<div class="grid4">→Cardiology</div>
+
+<div class="grid5">→Obstetrics and gynecolog</div>
+<div class="grid6">→Emergency room packages</div>
+<div class="grid7">→General medicines</div>
+<div class="grid8">→Ophthalmology</div>
+<div class="grid9">→Oral and maxillofacial surgery</div>
+<div class="grid10">→General surgery</div>
+<div class="grid11">→Organ transplant packages</div>
+<div class="grid12">→Genitourinary surgery (renal)</div>
+<div class="grid13">→Orthopaedics and polytrauma</div>
+<div class="grid14">→Interventional neuroradiolog</div>
+<div class="grid15">→Knee and hip replacement</div>
+<div class="grid16">→Otorhinolaryngology</div>
+<div class="grid17">→Pediatric surgery</div>
+<div class="grid18">→Medical oncology</div>
+<div class="grid19">→Pediatric medical management</div>
+<div class="grid20">→Mental disorder packages</div>
+<div class="grid21">→Radiation oncology</div>
+<div class="grid22">→Neonatal packages</div>
+<div class="grid23">→Surgical oncology</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>• Exclusions Mukhyamantri Amrutum Yojana</h2>
+Mukhyamantri Amrutum Yojana covers the insured for a large number of healthcare treatments and there are very few exclusions under it. These are mentioned below:
+
+→ Cover for some non-emergency procedures
+
+→ Cover for cosmetic treatments such as plastic surgery to enhance aesthetics
+
+<h2>• Eligibility For Mukhyamantri Amrutum Yojana</h2>
+
+Given below is the eligibility criteria for Mukhyamantri Amrutum Yojana:
+
+→ Lower-income group families named Mukhyamantri Amrutum Vatsalya Yojana in August 2014
+
+→ People with an annual income of less than Rs. 4 lakh
+
+→ U-win cardholders are also included
+
+→ All urban and rural Accredited Social Health Activists (ASHAs), reporters, and fixed pay employees of class 3 & 4 appointed by the state government
+
+→ Senior citizens of families with an annual income group of a maximum of Rs. 6 lakh
+<h2>• Documents Required for Mukhyamantri Amrutum Yojana</h2>
+When visiting the nodal agency, the beneficiary is required to carry the following documents for enrolment under Mukhyamantri Amrutum Yojana:
+<br>
+<br>→ Identification proof
+<br>→ Address proof
+<br>→ Proof of income
+<br>→ Certificate showing that the family falls in the Below Poverty Line category
+<br>To Apply visit
+<a target="_blank" href="http://magujarat.com/"> Official Website</a>
+
+<h1><li>Rogi Kalyan Samiti</li></h1>
+
+Public health is a state subject. Under the National Rural Health Mission, RogiKalyanSamitis (RKSs)/Hospital Management Committees (HMCs) are 
+
+envisaged to be constituted at public health facilities at the level of Primary Health Centres (PHC) and above including Community Health Centres (CHCs) and District Hospitals.
+
+The RKS/HMS is required to be registered under the Societies Registration Act and with account in a local bank.  It is to be set up at all the Public Health Facilities starting from Primary Health Centre level and above. It consists of members from local Panchayati Raj Institutions (PRIs), Non- Governmental Organizations (NGOs), local elected representatives and state Government officials. It would have the authority to raise its own resources by way of user fees and utilize the same for improvement of services rendered in the facility. Under NRHM each RKS is provided with funds including annual corpus grant as under:
+
+As per NRHM Framework for Implementation, every public hospital including district hospital should have RKS/HMC. The state/UT wise information of RKS/HMC of District level health facilities including District Hospitals (DHs) is at Annexure.
+
+Public health is a state subject. Under NRHM, financial support by way of corpus grants, Annual Maintenance Grant, Untied Grant etc.  are provided only for those public hospitals where RKS/HMC has been constituted and registered. It is also part of MOU between the Central and State Government.
+<br>Form and eligibility criteria : 
+<a target="_blank" href="http://vbch.dnh.nic.in"> Official Website</a>
+<br>
+<h1>Bal Sakha Yojna </h1>
+Bal Sakha Yojana was incepted in January 2009, to make accessible expert care by private pediatrician to all BPL and tribal children born under the ambit of the 
+
+Chiranjeevi Yojana or in Government Health care institution. It is also meant for all the children upto 1 month age identified at risk by Mamta Abhiyan and IMNCI trained health worker as per protocols.
+<h2>• The Scheme is operationalised in two parts:
+
+    </h2>
+
+    <h3> <li>Bal Sakha Yojana 1</li></h3>
+This part of scheme is applicable to all babies born in BPL, neo-middle class families (with income limit of Rs. 2 lakh) and Tribal APL families (Non Income Tax Paying) under Chiraneevi Yojana, or at CHCs and District Hospitals, where specialized pediatric services are not available.
+
+Under this scheme, the pediatrician attends all eligible newborns at the place of birth and has to ensure their survival by providing early neonatal care including immunizations at birth, nutrition advice, etc.
+
+The gynecologist has to ensure 2 days stay of mother and baby after delivery to cover dangers of immediate post partum period. In case the infant requires any further care, the baby has to be transferred and treated in the pediatrician’s NICU.
+
+
+If the infant requires any high level of care such as ventilator care, the baby will be transferred to Level 3 NICU in medical college hospitals and given facility / money for ambulance charges.
+
+A package of remuneration is worked out for a total of 100 babies covered as under:
+Thus the pediatrician will receive Rs 2,69,000 for 100 consecutive babies treated. Transfer charges shall be given for transfer of babies from one facility to another by the pediatrician as above and will be reimbursed to him / her as per actual.
+<h3>Bal Sakha Yojana Part 2</h3>
+This is applicable to all babies born to BPL, neo-middle class (with income limit of Rs. 2 lakh) and Tribal APL families (Non Income Tax Paying) born at other places than those mentioned in part 1, i.e. born at home, sub centre or a PHC.
+
+The babies born at all places are examined as per IMNCI protocols and those who are identified in Red zone i.e. those who require further medical assistance are referred to the private pediatrician partnering under this scheme.
+
+The health worker such as ASHA or aanganwadi worker 
+
+escorts the baby to the pediatrician and is paid incentive for this. The pediatrician will examine and treat 100 such children referred and will admit those who require indoor care. The transfer to higher level will be done as and when required as in part 1.
+
+<br>To apply visit :
+<a target="_blank" href="https://nhm.gujarat.gov.in/routine-immunization.htm"> Official Website</a>
+    </ul>
+
+</p>
+    </div>
+  </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Women and child Department</h3>
+                      <ul>
+                          <li><i class="fa fa-map-marker" aria-hidden="true"></i>   Block NO 9, 6th Floor,New sachivalay, Gandhinagar</li>
+                          <li><i class="fa fa-phone" aria-hidden="true"></i> 079-232-57942</li>
+                          <li><i class="fa fa-envelope" aria-hidden="true"></i> pa2sec-wncw@gujarat.gov.in</li>
+                      </ul>
+                  </div>
+      
+                  <div class="visit-counter">
+                    <p>This page was viewed</p>
+                    <h1 id="count">0</h1>
+                    <p>times</p>
+                  </div>
+                  <div class="col item social">FOLLOW US ON : <br><br><a target="_blank" href="https://www.facebook.com/WCDGujarat/"><i class="icon ion-social-facebook"></i></a><a target="_blank" href="https://twitter.com/WCDGujarat"><i class="icon ion-social-twitter"></i></a><a target="_blank" href="https://www.linkedin.com/company/women-child-development-department-govt-of-gujarat/?originalSubdomain=in"><i class="icon ion-social-linkedin"></i></a><a target="_blank" href="https://www.instagram.com/wcdgujarat/?hl=en"><i class="icon ion-social-instagram"></i></a></div>
+              </div>
+              <p class="copyright">Copyright @ Government of Gujarat</p>
+          </div>
+      </footer>
+  </div>
+      <script>
+        
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+ <script>
+   function loadGoogleTranslate() {
+     new google.translate.TranslateElement(
+       "google_element");
+   }
+ // Get the button:
+ let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+const countEl = document.getElementById("count");
+      countvisits();
+
+      function countvisits() {
+        fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1')
+          .then((res) => res.json())
+          .then((res) => {
+            countEl.innerHTML = res.value;
+          });
+      }
+ </script>
+
+
+</body>
+
+</html>
